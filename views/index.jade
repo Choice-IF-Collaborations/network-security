@@ -1,0 +1,170 @@
+doctype html
+html(lang="en")
+  head
+    title Your Connected Home
+    meta(name="viewport" charset="utf-8" content="width=device-width" initial-scale="1.0")
+    script(type="text/javascript" src="/public/javascripts/jquery.js")
+    script(type="text/javascript" src="/public/javascripts/app.js")
+    link(rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700")
+    link(rel="stylesheet" type="text/css" href="/public/stylesheets/app.css")
+  body
+    div(id="header")
+      h1 Your Connected Home
+    div(id="content")
+      div(id="devices")
+    div(id="device_info" class="overlay")
+      div(class="header")
+        h1 Tests
+        a(href="#" class="close_overlay") Close
+      div(class="content")
+        div(class="meta")
+          img(id="device_symbol")
+          h2(id="device_status") –
+          p(id="line_two") –
+        //Begin network security prototype
+        div(class="network_security_view")
+          div(class="problem_banner_security")
+            p We've noticed that some of your routers default settings haven't been changed.
+          div(class="problem_banner_final")
+            p You've taken key steps to improve the security of your network. 
+          div(class="feed")
+            div(class="internet_information_module network_security")
+              p You can take a few simple steps to fix this and improve the security of your network.
+              a(href="#" class="security_button" id="sb_one") Continue
+            div(class="internet_information_module network_security_one")
+              h2(style="margin-botom: 1.5em;") Give your router a name
+              input#routerName.form-control(type='text', placeholder='insert router name' name='routerName')
+              p(class="small_text") This name will be broadcast publically. Ensure you don't give away any personal details like your name.
+              a(href="#" class="security_button" id="sb_two") Continue
+            div(class="internet_information_module network_security_two")
+              h2 Create a password to access your WiFi
+              input#routerPassword.form-control(type='password', placeholder='insert password' name='routerPassword')
+              p(class="small_text") Your router supports the WPA2 standard of encryption. We've selected this by default as best practice. 
+              a(href="#" class="security_button" id="sb_three") Continue
+            div(class="internet_information_module network_security_three")
+              h2 Security updates
+              ul
+                li Router name - Updated
+                li Password - Updated
+                li Encryption - WPA2
+              a(href="" class="security_button") Finish
+
+        div(class="infrastructure_internet_view")
+          div(class="problem_banner")
+            p Your connection speed is affected by poor line quality in your area.
+          div(class="feed")
+            div(class="internet_information_module")
+              div(class="three_split_module")
+                div(class="module")
+                  h3 Download speed
+                  p 3#[span Mbps]
+                div(class="module")
+                  h3 Upload speed
+                  p 1.5#[span Mbps]
+                div(class="module")
+                  h3 Last disconnected
+                  p 2#[span hours ago]
+              div(class="three_split_module")
+                div(class="module")
+                  h3 Speed in use
+                  p 80%
+                div(class="module")
+                  h3 Fastest at
+                  p(class="smaller") Saturday
+                  p(class="smaller") 8am – 10am
+                div(class="module")
+                  h3 Slowest at
+                  p(class="smaller") Weekdays
+                  p(class="smaller") 7pm – 11pm
+              p(class="timestamp") Tested 12 minutes ago
+            div(class="internet_information_module")
+              h2 Overview
+              ul
+                li
+                  p Your connection speed is significantly slower than advertised. Your current speed is about average for your home.
+                li
+                  p Reliability for your connection is poor. On average, your connecton is lost every 6 hours.
+            div(class="internet_information_module")
+              h2 Around you
+              ul
+                li
+                  p On your street, connection speeds are similar to yours.
+                li
+                  p In your postcode, your connection speed is slightly faster than average.
+                li
+                  p In your region, your connection speed is slightly slower than average.
+                li
+                  p Nationally, your connection speed is slower than average.
+            div(class="internet_information_module")
+              h2 Getting help
+              ul
+                li
+                  p Call AusConnect on #[a(href="#") 800 212 212].
+                li
+                  p
+                    a(href="#") Share your speed and reliability information with CHOICE.
+                li
+                  p
+                    a(href="#") Send a complaint to Telecommunications Industry Ombudsman.
+                li
+                  p
+                    a(href="#") Download a report with your recent performance information.
+        div(class="product_view")
+          div(class="feed" style="border-bottom:#efefef 1px solid; overflow:auto;")
+            p(class="online-or-offline-1") –
+            p(class="online-or-offline-2") –
+            a(id="test_now_button" href="#") Test now
+          div(id="connection_testing" class="feed" style="display:none;")
+            div(id="test_internet_connection" class="test_bracket_container")
+              div(class="status_icon pending")
+              div(class="test_bracket_content")
+                h2 NBN connection
+                p(class="test") Trying to load the CHOICE website to check your Internet connection...
+                p(class="result bad") Loading the CHOICE website didn't work. There may be a problem with your Internet connection.
+                p(class="result good") Your Internet connection is working. A website can be loaded.
+                div(class="advice_panel")
+                  p
+                    a(href="#" class="self_help") I want help to fix this myself
+                  p
+                    a(href="#" class="external_help") I want to contact someone about this
+                  div(class="advice external_advice")
+                    h3 How can I get help?
+                    p Your connection is provided by AusConnect. Call them at 1800 123 456 to talk to support or to arrange a visit from an engineer. Lines are open 24 hours. 
+            div(id="test_router" class="test_bracket_container")
+              div(class="status_icon pending")
+              div(class="test_bracket_content")
+                h2 Router
+                p(class="test") Checking the quality of your Wi-Fi signal...
+                p(class="result bad") Your router may not be working. It can't be connected to by another product.
+                p(class="result good") Your router is working. It can be connected to by another product.
+                div(class="advice_panel")
+                  p
+                    a(href="#" class="self_help") I want help to fix this myself
+                  div(class="advice self_help_advice")
+                    h3 What can I do?
+                  p
+                    a(href="#" class="external_help") I want to contact someone about this
+                  div(class="advice external_advice")
+                    h3 How can I get help?
+                    p Your router was supplied with your Internet connection by AusConnect.
+                    p Call them at 1800 123 456 to arrange a visit from an engineer.
+                    p Lines are open 24 hours.
+            div(id="test_device" class="test_bracket_container")
+              div(class="status_icon pending")
+              div(class="test_bracket_content")
+                h2 #[span(id="test_device_name") test device name]
+                p(class="test") Checking if your network can communicate with this product...
+                p(class="result good") Your router is able to communicate with this product.
+                p(class="result bad") –
+                div(class="advice_panel")
+                  p
+                    a(href="#" class="self_help") I want help to fix this myself
+                  div(class="advice self_help_advice")
+                    h3 What can I do?
+                  p
+                    a(href="#" class="external_help") I want to contact someone about this
+                  div(class="advice external_advice")
+                    h3 How can I get help?
+                    p This product was made by XXXX.
+                    p Call them at 1800 XXX XXXX to talk to their support.
+                    p Lines are open XXXXX.

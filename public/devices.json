@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Router",
+    "symbol": "signal.svg",
+    "type": "network_security",
+    "online": true,
+    "problem": true
+  },
+  {
+    "name": "Internet",
+    "symbol": "symbol-internet.svg",
+    "type": "infrastructure_internet",
+    "online": true,
+    "problem": false
+  },
+  {
+    "name": "Lounge TV",
+    "symbol": "symbol-tv.svg",
+    "type": "product",
+    "online": true,
+    "problem": false
+  },
+  {
+    "name": "Laptop",
+    "symbol": "symbol-laptop.svg",
+    "type": "product",
+    "problem": false,
+    "online": true
+  },
+  {
+    "name": "Phone",
+    "symbol": "symbol-phone.svg",
+    "type": "product",
+    "problem": false,
+    "online": true
+  },
+  {
+    "name": "Bedroom TV",
+    "symbol": "symbol-tv.svg",
+    "type": "product",
+    "problem": false,
+    "online": false
+  },
+  {
+    "name": "Desktop",
+    "symbol": "symbol-imac.svg",
+    "type": "product",
+    "problem": false,
+    "online": false
+  },
+  {
+    "name": "Tablet",
+    "symbol": "symbol-tablet.svg",
+    "type": "product",
+    "problem": false,
+    "online": false
+  }
+]
