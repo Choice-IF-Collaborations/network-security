@@ -256,6 +256,7 @@ a {
 .problem_banner_final {
   background: #f15a24;
   padding: 1em;
+  margin-bottom: 1.5em;
   color: #FFF;
   line-height: 1.2; }
 
@@ -281,14 +282,20 @@ ul {
     border-bottom: 0; }
   .internet_information_module h2 {
     margin-bottom: 1em !important;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-bottom: 2em; }
   .internet_information_module p {
     line-height: 1.2;
-    margin-bottom: 0.5em; }
+    margin-bottom: 2em; }
     .internet_information_module p:last-child {
       margin-bottom: 0; }
     .internet_information_module p.timestamp {
       color: #AAA; }
+  .internet_information_module input {
+    margin-top: 1em;
+    margin-bottom: 1em; }
+  .internet_information_module ul {
+    margin-bottom: 2em; }
   .internet_information_module .three_split_module {
     overflow: auto; }
     .internet_information_module .three_split_module .module {
