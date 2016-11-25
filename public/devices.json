@@ -7,17 +7,10 @@
     "problem": true
   },
   {
-    "name": "Internet",
-    "symbol": "symbol-internet.svg",
-    "type": "infrastructure_internet",
-    "online": true,
-    "problem": false
-  },
-  {
     "name": "Lounge TV",
     "symbol": "symbol-tv.svg",
     "type": "product",
-    "online": true,
+    "online": false,
     "problem": false
   },
   {
@@ -25,32 +18,11 @@
     "symbol": "symbol-laptop.svg",
     "type": "product",
     "problem": false,
-    "online": true
+    "online": false
   },
   {
     "name": "Phone",
     "symbol": "symbol-phone.svg",
-    "type": "product",
-    "problem": false,
-    "online": true
-  },
-  {
-    "name": "Bedroom TV",
-    "symbol": "symbol-tv.svg",
-    "type": "product",
-    "problem": false,
-    "online": false
-  },
-  {
-    "name": "Desktop",
-    "symbol": "symbol-imac.svg",
-    "type": "product",
-    "problem": false,
-    "online": false
-  },
-  {
-    "name": "Tablet",
-    "symbol": "symbol-tablet.svg",
     "type": "product",
     "problem": false,
     "online": false

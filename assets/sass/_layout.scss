@@ -134,9 +134,10 @@ a {
       width:calc(2em + 20px);
       display:block;
       position:absolute;
-      right:0;
+      left:0;
       top:0;
-      background-image:url('/public/images/close.svg');
+      margin-left: 0.5em;
+      background-image:url('/public/images/symbol-arrow-back.svg');
       background-repeat:no-repeat;
       background-position:center center;
       background-size:65% 65%;
