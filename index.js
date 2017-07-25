@@ -3,6 +3,9 @@ var express = require('express');
 var path = require('path');
 var app = express();
 var http = require('http').Server(app);
+var helmet = require('helmet');
+
+app.use(helmet());
 
 // CONFIG
 app.set('port', process.env.PORT || 3000);
