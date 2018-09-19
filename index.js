@@ -9,7 +9,7 @@ app.use(helmet());
 
 // CONFIG
 app.set('port', process.env.PORT || 3000);
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
 // ROUTES
