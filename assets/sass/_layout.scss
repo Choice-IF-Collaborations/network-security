@@ -137,7 +137,7 @@ a {
       left:0;
       top:0;
       margin-left: 0.5em;
-      background-image:url('/public/images/symbol-arrow-back.svg');
+      background-image:url('/images/symbol-arrow-back.svg');
       background-repeat:no-repeat;
       background-position:center center;
       background-size:65% 65%;
@@ -430,19 +430,19 @@ ul {
     margin-right:0.5em;
 
     &.pending {
-      background-image:url('/public/images/status_pending.svg')
+      background-image:url('/images/status_pending.svg')
     }
 
     &.working {
-      background-image:url('/public/images/status_working.svg')
+      background-image:url('/images/status_working.svg')
     }
 
     &.good {
-      background-image:url('/public/images/status_good.svg')
+      background-image:url('/images/status_good.svg')
     }
 
     &.bad {
-      background-image:url('/public/images/status_bad.svg')
+      background-image:url('/images/status_bad.svg')
     }
   }
 
